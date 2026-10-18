@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+ char command[20];
+    printf("Enter command (START/STOP): ");
+    scanf("%19d",command);
+
+    if (strcmp(command,"START")==0)
+    {
+        printf("THE ROBOT IS STARTED");
+    }
+    else if (strcmp(command,"STOP")==0)
+    {
+        printf("THE ROBOT HAS STOPPED");
+    }
+    else
+    {
+        printf("INVALID INPUT");
+    }
+    return 0;
+}
