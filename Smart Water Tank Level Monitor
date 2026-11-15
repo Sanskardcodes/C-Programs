@@ -1,0 +1,39 @@
+
+#include <stdio.h>
+
+int main() {
+    int waterLevel;
+    
+    printf("================================\n");
+    printf("     SMART WATER TANK SYSTEM\n");
+    printf("================================\n");
+
+    printf("Enter water level (0-100): ");
+    scanf("%d", &waterLevel);
+
+    if (waterLevel < 0 || waterLevel > 100) {
+        printf("Invalid water level!\n");
+    }
+    else {
+        printf("\nWater Level: %d%%\n", waterLevel);
+
+        if (waterLevel <= 20) {
+            printf("Status: LOW WATER\n");
+            printf("Alert: Water pump ON\n");
+        }
+        else if (waterLevel >= 90) {
+            printf("Status: TANK FULL\n");
+            printf("Alert: Water pump OFF\n");
+        }
+        else {
+            printf("Status: NORMAL\n");
+            printf("Water pump: OFF\n");
+        }
+    }
+
+    printf("\n================================\n");
+    printf("       SYSTEM MONITORING\n");
+    printf("================================\n");
+
+    return 0;
+}
