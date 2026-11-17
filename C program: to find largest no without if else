@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+
+int largest_of_three(int a, int b, int c) {
+
+    int largest = (a > b ? a : b);
+    largest = (largest > c ? largest : c);
+    return largest;
+}
+
+int main() {
+    int num1, num2, num3;
+
+    printf("Enter three integers: ");
+
+    if (scanf("%d %d %d", &num1, &num2, &num3) != 3) {
+        printf("Invalid input. Please enter integers only.\n");
+        return 1;
+    }
+
+    int result = largest_of_three(num1, num2, num3);
+    printf("Largest number is: %d\n", result);
+
+    return 0;
+}
