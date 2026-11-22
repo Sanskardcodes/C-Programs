@@ -1,0 +1,23 @@
+//Robot Security Passcode Check (strcmp)
+
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    char password[20];
+
+    printf("Enter robot password");
+    scanf("%s", &password);
+
+    if(strcmp(password, "ROBO1234")==0)
+    {
+        printf("Access granted: Robot unlocked");
+    }
+    else
+    {
+        printf("Access denied: Robot locked");
+    }
+
+    return 0;
+}
