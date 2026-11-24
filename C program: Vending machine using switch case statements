@@ -1,0 +1,38 @@
+#include<stdio.h>
+
+int main ()
+{
+    int choice;
+    printf("----VENDING MACHINE----\n");
+    printf("1. Coffee\n");
+    printf("2. tea\n");
+    printf("3. water\n");
+    printf("4. Soda");
+    printf("Enter your choice(1,2,3,4)\n");
+    scanf("%d",&choice);
+
+    switch(choice){
+        
+    case 1:
+    printf("you selected coffee that will be $1.50.\n");
+    break;
+    
+    case 2:
+    printf("you selected Tea that will be $1.00.\n");
+    break;
+    
+    case 3:
+    printf("you selected water that will be $0.50.\n");
+    break;
+
+    case 4:
+    printf("you selected Soda that will be $2.50.\n");
+    break;
+
+    default:
+    printf("Invalid choice ");
+    break;
+    }
+
+    return 0;
+}
