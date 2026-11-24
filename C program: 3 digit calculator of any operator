@@ -1,0 +1,44 @@
+#include<stdio.h>
+
+int main()
+{
+    int a,b,c;
+    char op;
+
+    printf("Enter first number:");
+    scanf("%d",&a);
+    
+    printf("Enter second number:");
+    scanf("%d",&b);
+    
+    printf("Enter third number:");
+    scanf("%d",&c);
+
+    printf("Enter the operator ('+','-','/','*'):");
+    scanf(" %c",&op);
+
+    if(op == '+')
+    {
+        printf("Result is %d",a+b+c);
+    }
+
+    else if(op == '-')
+    {
+        printf("result is %d",a-b-c);
+    }
+
+    else if(op == '*')
+    {
+        printf("result is %d",a*b*c);
+    }
+
+    else 
+    {
+        printf("result is %d",a/b/c);
+    }
+
+    return 0;
+    
+    
+    
+}
