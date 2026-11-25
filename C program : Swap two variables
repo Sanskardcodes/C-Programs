@@ -1,0 +1,22 @@
+// Program to show area and perimeter of rectangle based on input from user
+
+#include<stdio.h>
+
+int main()
+{
+    int length,width,area,perimeter;
+
+    printf("Enter length of rectangle:");
+    scanf("%d",&length);
+
+    printf("Enter width of rectangle:");
+    scanf("%d",&width);
+
+    area = length*width;
+    printf("area is %d\n",area);
+
+    perimeter = 2*(length+width);
+    printf("perimeter is %d\n",perimeter);
+
+    return 0;    
+}
