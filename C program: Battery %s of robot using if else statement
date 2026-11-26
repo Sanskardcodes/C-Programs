@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main()
+{
+    int battery_percentage;
+
+    printf("Enter robot battery in percentage: ");
+    scanf("%d",&battery_percentage);
+
+    if(battery_percentage==100)
+    {
+        printf("Battery fully charged return to task: ");
+    }
+
+    else if(battery_percentage>=50 && battery_percentage<=99)
+    {
+        printf("moderate battery : charge or return to task");
+    }
+
+    else
+    {
+        printf("Battery low return to charging station");
+    }
+
+    return 0;
+}
