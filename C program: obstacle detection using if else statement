@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main()
+{
+    int obstacle_cm;
+
+    printf("Enter distance in Cm");
+    scanf("%d",&obstacle_cm);
+
+
+    if(obstacle_cm <= 15)
+    {
+        printf("Obstacle nearby: Robot stopped");
+    }
+
+    else if(obstacle_cm<= 40 && obstacle_cm>=16)
+    {
+        printf("Obstacle ahead: Robot in slow mode");
+    }
+
+    else
+    {
+        printf("No obstacle: Robot Moving");
+    }
+    return 0;
+}
