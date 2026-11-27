@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main()
+{
+    int a,b,sum,difference,division,product;
+
+    printf("Enter a number : ");
+    scanf("%d",&a);
+    printf("Enter a number : ");
+    scanf("%d",&b);
+
+    sum = a+b;
+    printf("The sum is %d\n",a+b);
+
+    difference = a-b;
+    printf("The difference is %d\n",a-b);
+
+    division = a/b;
+    printf("The division is %d\n",a/b);
+
+    product = a*b;
+    printf("The product is %d\n",a*b);
+
+    return 0;
+}
