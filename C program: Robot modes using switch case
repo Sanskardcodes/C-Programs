@@ -1,0 +1,34 @@
+#include<stdio.h>
+
+int main()
+{
+    int choice;
+
+    printf("----ROBOT MODES----\n");
+    printf("1. Mode: PATROL - Scanning area\n");
+    printf("2. Mode: DOCK - Returning to charger\n");
+    printf("3. Mode: MANUAL - Waiting for joystick\n");
+    printf("4. Mode: ESTOP - Motors halted\n");
+    printf("Enter your choice : ");
+    scanf("%d",&choice);
+
+    switch(choice)
+        {
+            case 1 :
+            printf("Mode: PATROL - Scanning area");
+            break;
+            case 2 :
+            printf("Mode: DOCK - Returning to charger");
+            break;
+            case 3 :
+            printf(" Mode: MANUAL - Waiting for joystick");
+            break;
+            case 4 :
+            printf("Mode: ESTOP - Motors halted");
+            break;
+            default :
+            printf("ïnvalid choice");
+            
+        }
+    return 0;
+}
